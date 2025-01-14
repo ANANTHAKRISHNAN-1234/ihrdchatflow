@@ -6,7 +6,6 @@ function ChatInput({ messages, setMessages, collegeLists, setCollegeLists }) {
   const textareaRef = useRef(null);
 
   const handleBackendRequest = async (e) => {
-    console.log(collegeLists);
     const response = await fetch("http://127.0.0.1:5000/get_data", {
       method: "POST",
       headers: {
