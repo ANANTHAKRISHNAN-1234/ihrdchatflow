@@ -116,7 +116,7 @@ function ChatInput({ messages, setMessages, collegeLists, setCollegeLists }) {
         )}
       </button>
       <button
-        className="p-2 rounded-full bg-purple-500 hover:bg-purple-600 transition-colors"
+        className="p-2 rounded-full bg-[#0369a1] hover:bg-purple-600 transition-colors"
         onClick={sendMsg}
       >
         <Send className="h-5 w-5 text-white" />
