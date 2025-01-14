@@ -20,7 +20,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState("home");
   const [isCollegeSelectorOpen, setIsCollegeSelectorOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [collegeLists, setCollegeLists] = useState({});
+  const [collegeLists, setCollegeLists] = useState([]);
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);

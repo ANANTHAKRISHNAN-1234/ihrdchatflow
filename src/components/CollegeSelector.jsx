@@ -3,10 +3,8 @@ import { X, Check } from "lucide-react";
 
 function CollegeSelector({ isOpen, onClose, collegeLists, setCollegeLists }) {
   const [colleges, setColleges] = useState([
-    { id: "cec", name: "College of Engineering Chengannur", checked: false },
-    { id: "aec", name: "College of Engineering adoor", checked:false },
-    { id: "cek", name: "College of Engineering Karungapally", checked:false },
-    { id: "mec", name: "College of Engineering Model Engineering College", checked:false },
+    { id: 0, name: "College of Engineering Chengannur", checked: false },
+    { id: 3, name: "College of Engineering adoor" },
   ]);
 
   const handleSelectAll = () => {
@@ -29,10 +27,8 @@ function CollegeSelector({ isOpen, onClose, collegeLists, setCollegeLists }) {
   const handleDone = () => {
     const selectedColleges = colleges
       .filter((college) => college.checked)
-      .map((college) => college.name);
-    setCollegeLists({
-      colleges: [selectedColleges],
-    });
+      .map((college) => college.id);
+    setCollegeLists(selectedColleges);
     onClose();
     console.log(colleges);
   };
