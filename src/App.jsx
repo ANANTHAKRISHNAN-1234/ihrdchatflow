@@ -58,7 +58,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 to-purple-800">
+    <div className="min-h-screen bg-gradient-to-br from-[#0f172a] to-[#020617]">
       <Header onNavigate={handleNavigation} />
       <CollegeSelector
         isOpen={isCollegeSelectorOpen}

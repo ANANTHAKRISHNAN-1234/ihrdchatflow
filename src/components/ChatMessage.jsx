@@ -16,7 +16,7 @@ function ChatMessage({ message, isUser, messages, setMessages }) {
     <div className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
       <div
         className={`max-w-[80%] p-4 rounded-xl ${
-          isUser ? "bg-purple-500 text-white" : "bg-white/20 text-white"
+          isUser ? "bg-[#0369a1] text-white" : "bg-white/20 text-white"
         }`}
       >
         <div className="flex items-start space-x-2">
