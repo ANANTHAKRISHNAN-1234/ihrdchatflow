@@ -44,7 +44,7 @@ function ChatInput({ messages, setMessages, collegeLists, setCollegeLists }) {
   };
 
   const handleBackendRequest = async (e) => {
-    const response = await fetch("http://127.0.0.1:5000/get_data", {
+    const response = await fetch("https://ihrdbot.onrender.com/get_data", {
       method: "POST",
       headers: {
         "content-Type": "application/json",
